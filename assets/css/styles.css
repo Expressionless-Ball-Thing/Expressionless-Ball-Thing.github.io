@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Source+Code+Pro:ital,wght@1,300&display=swap');
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    ;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    min-width: 200px;
+    height: 100%;
+}
+
+.nav-bar {
+    text-align: center;
+    font-size: 19px;
+    background-color: black;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-bar a {
+    font-family: 'Oswald', sans-serif;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.nav-bar li:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    margin: 0.5em 10%;
+    background-color: rgb(255, 255, 255);
+}
+
+.info-box {
+    margin: 1.5rem 1.5em;
+}
+
+.info-box a {
+    color: rgb(255, 8, 0);
+    list-style: none;
+    text-decoration: none;
+}
+
+.info-box a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.info-box ul {
+    padding-left: 50px;
+}
+
+.project-table {
+    max-width: 80%;
+    margin: 1.1rem auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 0.5px solid grey;
+}
+
+.project-item {
+    background-color: white;
+    display: flex;
+    width: 50%;
+    min-height: 30%;
+}
+
+.project-contents {
+    display: flex;
+    width: 100%;
+    border: 0.5px solid grey;
+    word-wrap: break-word;
+}
+
+.project-img {
+    min-width: 40%;
+    max-width: 50%;
+    height: auto;
+}
+
+.project-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-text-title {
+    display: inline-block;
+    padding-bottom: 0.75rem;
+    margin: 0 0.1em;
+}
+
+.project-text-description {
+    display: block;
+    padding: 0 0.1em;
+    margin: 0 0.1em;
+}
+
+@media (max-width: 1100px) {
+    .project-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 620px) {
+    .project-table {
+        margin: 1.1rem 2em;
+    }
+}
+
+.blog {
+    display: flex;
+    width: 100%;
+    max-width: 720px;
+    margin: 3.125rem auto 0 auto;
+    color: white;
+}
+
+.blog-contents {
+    width: 100%;
+    height: 100%;
+    margin: 0.5rem 0.5rem;
+}
+
+.blog-contents h1 {
+    text-align: center;
+}
+
+.blog-nav-utilities {
+    list-style: none;
+    text-align: center;
+}
+
+.blog-nav-years {
+    padding: 0 0;
+    border-top: 1px dotted white;
+    border-bottom: 1px dotted white;
+}
+
+.blog-year-heading {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+}
+
+.blog-article-heading {
+    display: flex;
+}
+
+.blog-article-title {
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.blog-article-title a {
+    color: aqua;
+    list-style: none;
+    text-decoration: none;
+}
+
+.blog-article-title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.blog-article-description {
+    margin-top: 0;
+}
+
+.post {
+    color: white;
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    margin: 3.125rem auto 0 auto;
+}
+
+.post-meta {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px dotted white;
+}
+
+.post-title {
+    color: aqua;
+}
+
+.post-date {
+    color: red;
+}
+
+.post-content {
+    text-align: justify;
+    margin: 0 2em;
+    display: block;
+    font-size: 1em;
+}

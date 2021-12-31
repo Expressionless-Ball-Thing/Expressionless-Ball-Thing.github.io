@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EBT - blog</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+</head>
+
+<body>
+    {% include header-nav.html %}
+
+    <!-- The main thing-->
+    <main class="blog">
+        <div class="blog-contents">
+            <h1>Posts</h1>
+            <nav class="blog-nav-utilities">
+                <div class="RSS-tags"></div>
+                <div class="blog-nav-years">
+                    <a href="#2022"></a>
+                </div>
+            </nav>
+
+            {% for post in site.posts %}
+            <article class="blog-article">
+                <header class="blog-article-heading">
+                    <h3 class="blog-article-title"><a href={{post.url}}>{{post.title}}</a></h3>
+                    <p class="blog-article-date" style="color: red">{{post.date| date: "%F"}}</p>
+                </header>
+                <p class="blog-article-description">{{post.description}}</p>
+            </article>
+            {% endfor %}
+
+        </div>
+    </main>
+    <script src="" async defer></script>
+</body>
+
+</html>
