@@ -3,3 +3,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+public
+assets/bundle.js
+/dev-*/node_modules/
+/dev-*/build/

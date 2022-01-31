@@ -15,16 +15,25 @@
     {% include header-nav.html %}
     <!-- The main thing-->
     <section class="project-table">
-
-        <div class="project-item">
-            <div class="project-contents">
-                <div class="project-img"><img src="assets/images/chiken.png" alt="Project Image goes here"></div>
-                <div class="project-text">
-                    <h2 class="project-text-title">No Projects yet</h2>
-                    <p class="project-text-description">So here's knife duck</p>
+        {% for project in site.posts %}
+            {% if project.path contains "projects" %}
+            <div class="project-item">
+                <a href="{{project.url}}" style="text-decoration: none; color:black">
+                <div class="project-contents">
+                    <div class="project-img"><img src="assets/images/{{project.identifier}}.png" alt="Project Image goes here"></div>
+                    <div class="project-text">
+                        <h2 class="project-text-title">{{project.title}}</h2>
+                        <p class="project-text-description">{{project.description}}</p>
+                    </div>
                 </div>
+                </a>
             </div>
-        </div>
+            {% endif %}
+        {% endfor %}
+
+
+
+
 
     </section>
 

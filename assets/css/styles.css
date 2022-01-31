@@ -13,7 +13,6 @@ body {
     padding: 0;
     background-color: black;
     min-width: 200px;
-    height: 100%;
 }
 
 .nav-bar {
@@ -198,14 +197,14 @@ body {
 
 .post {
     color: white;
-    display: block;
+    display:block;
     width: 100%;
     max-width: 720px;
-    margin: 3.125rem auto 0 auto;
+    margin: 3.125rem auto 3.125rem auto;
 }
 
 .post-meta {
-    display: block;
+    display: block; 
     width: 100%;
     text-align: center;
     border-bottom: 1px dotted white;
@@ -220,6 +219,7 @@ body {
 }
 
 .post-content {
+    padding-bottom: 3.125rem;
     text-align: justify;
     margin: 0 2em;
     display: block;

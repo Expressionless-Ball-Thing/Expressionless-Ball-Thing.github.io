@@ -26,13 +26,15 @@
             </nav>
 
             {% for post in site.posts %}
-            <article class="blog-article">
-                <header class="blog-article-heading">
-                    <h3 class="blog-article-title"><a href={{post.url}}>{{post.title}}</a></h3>
-                    <p class="blog-article-date" style="color: red">{{post.date| date: "%F"}}</p>
-                </header>
-                <p class="blog-article-description">{{post.description}}</p>
-            </article>
+                {% if post.path contains "regular_posts" %}
+                    <article class="blog-article">
+                        <header class="blog-article-heading">
+                            <h3 class="blog-article-title"><a href={{post.url}}>{{post.title}}</a></h3>
+                            <p class="blog-article-date" style="color: red">{{post.date| date: "%F"}}</p>
+                        </header>
+                        <p class="blog-article-description">{{post.description}}</p>
+                    </article>
+                {% endif %}
             {% endfor %}
 
         </div>

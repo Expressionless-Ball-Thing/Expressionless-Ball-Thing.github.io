@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Google ReCaptcha Speedrun"
+identifier: "Captcha-Speedrun"
+description: "See how quick you can solve a Captcha"
+date:   2022-01-23 14:56:31 +1100
+permalink: "/:collection/:title/"
+---
+
+<link href="/assets/css/captcha-stopwatch.css" rel="stylesheet">
+
+Web App to see how fast you can solve a Captcha.
+
+Simply press the <strong style="color: red;">start</strong> button to begin, a Captcha Challenge will pop up and it will record your time when it's completed. Your fastest time will be recorded.
+
+(The recorded time be wiped when you refresh or exit the page)
+
+If you accidently clicked away from the Captcha window, simply press the <strong style="color: red;">reset</strong> button.
+
+If you want to test yourself again after a successful run, simply press the <strong style="color: red;">Try again</strong> button.
+<br>
+<div id="captcha-stopwatch"></div>
+
+<script src="/assets/js/captcha-stopwatch.js"></script>
+<br>
+Made with React and a free Google ReCaptcha API key, it's pretty barebones since I am self-learning web development skills and making this project as I go, but it's serviceable for what it is.
+
+I might add a leaderboard once I figured out how to save the scores.
